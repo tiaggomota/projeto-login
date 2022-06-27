@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Ocra';
+    src: url('fonte/OCRAEXT.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Ocra, Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --escuro: #180C30;
+    --cor0: #180C27;
+    --cor1: #301E45;
+    --cor2: #8E00F9;
+    --cor3: #00ff99;
+    --cor4: #70817b;
+}
+
+body {
+    background-color: var(--escuro);
+}
+
+.campo-principal {
+    display: flex;
+    background-color: var(--cor0);
+    width: 61em;
+    height: 34em;
+    margin: auto;
+    position: relative;
+    top: 6.5em;
+    border-radius: 3em;
+}
+
+.esquerdo {
+    display: flexbox;
+    flex-direction: column;
+    position: relative;
+    left: 3em;
+    top: 3em;
+}
+
+.campo-img {
+    position: relative;
+    top: 1.5em;
+    width: 31em;
+    height: 30em;
+}
+
+.campo-título > h1 {
+    color: var(--cor3);
+    font-size: 1.85em;
+    text-shadow: 1px 1px 3px #00ff9972;
+}
+
+.direito {
+    display: flexbox;
+    position: relative;
+    left: 4.7em;
+    top: 3.5em;
+    background-color: var(--cor1);
+    width: 22em;
+    height: 27em;
+    border-radius: 1.5em;
+    text-align: center;
+}
+
+.direito > h1 {
+    color: var(--cor3);
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: bolder;
+    position: relative;
+    top: 1em;
+    text-shadow: 1px 1px 3px #008650c2;
+}
+
+.campo-usuario, .campo-senha {
+    position: relative;
+    top: 3em;
+    margin: 2em;
+    padding: 0.5em;
+    width: 2em;
+    height: 2em;
+}
+
+label {
+    color: #ffffff;
+    position: relative;
+    bottom: 0.5em;
+}
+
+input {
+    width: 20em;
+    height: 3em;
+    border: 0;
+    border-radius: 1em;
+    text-indent: 1em;
+    outline: none;
+    /* Tirar borda*/
+    box-shadow: 9px 9px 25px #2a00698d;
+}
+
+.campo-botão {
+    position: relative;
+    top: 4em;
+}
+
+.botão {
+    height: 3em;
+    width: 20em;
+    border: 0;
+    border-radius: 1em;
+    color: var(--cor1);
+    background: var(--cor3);
+    font-weight: bolder;
+    box-shadow: 2px 2px 10px #008650c2;
+}
+
+.botão:hover {
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+}
+
+
+footer {
+    position: relative;
+    top: 11em;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .campo-principal {
+        width: 24em;
+        height: 70em;
+        flex-direction: column;
+        border-radius: 0px;
+        background-color: var(--escuro);
+
+    }
+
+    .esquerdo {
+        position: relative;
+        left: 1px;
+    }
+
+    .direito {
+        position: relative;
+        left: 1em;
+    }
+
+    .campo-img {
+        width: 25em;
+    }
+
+    .campo-título > h1 {
+        font-size: 1.6em;
+        text-shadow: 1px 1px 3px --sombra1;
+    }
+
+}
