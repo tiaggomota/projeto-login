@@ -18,22 +18,25 @@
             </div>
         </section>
         <section class="direito">
-            <h1>Login</h1>
-            <div class="campo-usuario">
-                <label for="Usuário">Usuário</label>
-                <input type="text" name="usuario" id="usuário" placeholder="Usuário">
-            </div>
-            <div class="campo-senha">
-                <label for="Senha">Senha</label>
-                <input type="password" name="senha" id="senha" placeholder="Senha">
-            </div>
-            <div class="campo-botão">
-                <input type="submit" value="L O G I N">
-            </div>
+            <form action="cadastro.php">
+                <h1>Login</h1>
+                <div class="campo-usuario">
+                    <label for="usuário">Usuário</label>
+                    <input type="text" name="usuario" id="usuário" placeholder="Usuário">
+                </div>
+                <div class="campo-senha">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                </div>
+                <div class="campo-botão">
+                    <input type="button" value="L O G I N" onclick="msg()">
+                </div>
+            </form>
         </section>
     </main>
     <footer> 
         &copy; TiagoMota - All Rights Reserved
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
