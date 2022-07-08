@@ -109,15 +109,16 @@ input {
     top: 4em;
 }
 
-.botão {
+.campo-botão > input{
     height: 3em;
     width: 20em;
     border: 0;
     border-radius: 1em;
     color: var(--cor1);
-    background: var(--cor3);
+    background-color: var(--cor3);
     font-weight: bolder;
     box-shadow: 2px 2px 10px #008650c2;
+    text-align: center;
 }
 
 .botão:hover {
