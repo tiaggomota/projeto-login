@@ -29,7 +29,7 @@ body {
 .campo-principal {
     display: flex;
     background-color: var(--cor0);
-    width: 61em;
+    width: 64em;
     height: 34em;
     margin: auto;
     position: relative;
